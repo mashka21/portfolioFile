@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+
+		}
+		body{
+			background-image: url(pictures/bg.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: sans-serif;
+			margin-top: 40px;
+		}
+		.regform{
+			width: 800px;
+			background-color: rgb(0, 0, 0, 0.6);
+			margin: auto;
+			color: #fff;
+			padding: 10px 0 10px 0;
+			text-align: center;
+			border-radius: 15px 15px 0px 0px;
+		}
+		.main{
+			background-color: rgb(0, 0, 0, 0.5);
+			width: 800px;
+			margin: auto;
+		}
+		form{
+			padding: 10px;
+		}
+		#name{
+			width: 100%;
+			height: 100px;
+		}
+		.name{
+			margin-left: 25px;
+			margin-top: 30px;
+			width: 125px;
+			color: white;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		.Fname{
+			position: relative;
+			left: 200px;
+			top: -37px;
+			line-height: 40px;
+			border-radius: 6px;
+			padding: 0 22px;
+			font-size: 16px;
+		}
+		.Lname{
+			position: relative;
+			left: 417px;
+			top: -80px;
+			line-height: 40px;
+			border-radius: 6px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+		}
+		.FirstL {
+			position: relative;
+			color: #E5E5E5;
+			text-transform: capitalize;
+			font-size: 14px;
+			left: 203px;
+			top: -45px;
+		}
+		.lastL {
+			position: relative;
+			color: #E5E5E5;
+			text-transform: capitalize;
+			font-size: 14px;
+			left: 175px;
+			top: -45px;
+		}
+		.Company{
+			position: relative;
+			left: 200px;
+			top: -37px;
+			line-height: 40px;
+			width: 480px;
+			border-radius: 6px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+		}
+		.email {
+			position: relative;
+			left: 200px;
+			top: -37px;
+			line-height: 40px;
+			border-radius: 6px;
+			padding: 0 22px;
+			font-size: 16px;
+			width: 300px;
+			color: #555;
+		}
+		.code {
+			position: relative;
+			left: 200px;
+			top: -37px;
+			line-height: 40px;
+			border-radius: 6px;
+			padding: 0 22px;
+			font-size: 16px;
+			width: 95px;
+			color: #555;
+		}
+		.number {
+			position: relative;
+			left: 200px;
+			top: -37px;
+			line-height: 40px;
+			border-radius: 6px;
+			padding: 0 22px;
+			font-size: 16px;
+			width: 255px;
+			color: #555;
+		}
+		.area-code {
+			position: relative;
+			color: #E5E5E5;
+			text-transform: capitalize;
+			font-size: 16px;
+			left: 55px;
+			top: -4px;
+		}
+		.phone-number{
+			position: relative;
+			color: #E5E5E5;
+			text-transform: capitalize;
+			font-size: 16px;
+			left: -100px;
+			top: -4px;
+		}
+		.option{
+			position: relative;
+			left: 200px;
+			top: -37px;
+			width: 500px;
+			height: 40px;
+			line-height: 40px;
+			border-radius: 6px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+			outline: none;
+			overflow: hidden;
+		}
+		.option option{
+			font-size: 20px;
+		}
+		#cust{
+			margin-left: 25px;
+			color: white;
+			font-size: 18px;
+		}
+		.radio{
+			display: inline-block;
+			margin-left: 25px;
+			padding-right: 70px;
+			margin-top: 15px;
+			color: white;
+		}
+		.radio input{
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			outline: none;
+		}
+		button{
+			background-color: #3baf9f;
+			display: block;
+			margin: 20px auto 0px auto;
+			text-align: center;
+			border-radius: 12px;
+			border: 2px solid #366647;
+			padding: 14px 110px;
+			outline: none;
+			color: white;
+			cursor: pointer;
+			transition: 0.25px;
+
+		}
+		button:hover{
+			background-color: #53abf5;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="regform"><h1>Registeration Form</h1></div>
+	<div class="main">
+		<form>
+			<div id="name">
+				<h2 class="name">Name</h2>
+				<input class="Fname" type="text" name="F_name" placeholder="First Name"><br>
+				<label class="FirstL">First Name</label>
+
+				<input class="Lname" type="text" name="L_name" placeholder="Last Name">
+				<label class="lastL">Last Name</label>
+			</div>
+			<h2 class="name">Company</h2>
+			<input class="Company" type="text" name="Company">
+
+			<h2 class="name">Email</h2>
+			<input class="email" type="email" name="email" placeholder="your email">
+
+			<h2 class="name">Phone</h2>
+			<input class="code" type="text" name="area_code" placeholder="Area Code">
+			<label class="area-code">Area Code</label>
+			<input class="number" type="text" name="phone" placeholder="phone number">
+			<label class="phone-number">phone number</label>
+
+			<h2 class="name">Subject</h2>
+			<select class="option"  name="subject">
+				<option disabled="disabled" selected="selected">Choose option</option>
+				<option>subjec-1</option>
+				<option>subjec-2</option>
+				<option>subjec-3</option>
+			</select>
+			
+
+			<h2 id="cust">Are your beginner ?</h2>
+			<label class="radio">
+				<input class="radio-one" type="radio" name="click" checked="checked">
+				<span class="checkmark"></span>
+				Yes
+			</label>
+			<label class="radio">
+				<input class="radio-two" type="radio" name="click">
+				<span class="checkmark"></span>
+				No
+			</label>
+
+			<button type="submit">Register</button>
+			 
+		</form>
+	</div>
+
+</body>
+</html>
